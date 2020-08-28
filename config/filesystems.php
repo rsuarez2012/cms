@@ -61,6 +61,12 @@ return [
             'root' => '/home/raux/Proyectos_Laravel/cms/public/uploads'
             
         ],
+        //carpeta para imagenes o avatar de los usuarios
+        'uploads_users' => [
+            'driver' => 'local',
+            'root' => '/home/raux/Proyectos_Laravel/cms/public/uploads_users'
+            
+        ],
 
         's3' => [
             'driver' => 's3',

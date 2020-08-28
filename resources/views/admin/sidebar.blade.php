@@ -1,7 +1,7 @@
 <div class="sidebar shadow">
 	<!--video 11-->
 	<div class="section-top">
-		<img src="{{ url('/static/images/american-express.png') }}" class="logo img-fluid">
+		<img src="{{ url('/static/images/logoN.v02.png') }}" class="logo img-fluid">
 	
 		<div class="user">
 			<span class="subtitle">Hola:</span>

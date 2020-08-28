@@ -28,7 +28,9 @@
 
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="{{ url('/static/libs/ckeditor/ckeditor.js') }}"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
 	<script src="{{ url('/static/js/admin.js?v='.time()) }}"></script>
 
 	
@@ -40,6 +42,7 @@
 		<div class="col2">
 			<nav class="navbar navbar-expand-lg shadow">
 				<div class="collapse navbar-collapse">
+					<!--<button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>-->
 					<ul class="nav navbar-nav">
 						<li class="nav-item">
 							<a href="{{ url('/admin') }}" class="nav-link">Dashboard</a>
@@ -121,7 +124,14 @@
 		$(document).ready(function(){
 			$(".dropdown-toggle").dropdown();
 			$('[data-toggle="tooltip"]').tooltip();
-		})
+		
+			$("#menu-toggle").click(function(e) {
+		      e.preventDefault();
+		      $("#wrapper").toggleClass("toggled");
+		    });
+
+
+	    })
 	</script>
 </body>
 </html>

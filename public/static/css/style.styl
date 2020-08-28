@@ -13,6 +13,14 @@ a
 	&:focus
 		box-shadow none
 		outline none
+.mtop16
+	margin-top 16px
+.mtop32
+	margin-top 32px
+.form-control
+	&:hover
+	&:focus
+		box-shadow none
 nav
 	background-color #fff
 	border-bottom 2px solid color1
@@ -82,4 +90,110 @@ nav
 					margin-right 6px 
 					top -1px
 					width 24px
-			
+.wrapper
+	.panel
+		background-color #fff
+		border-radius 6px
+		border-bottom 2px solid #2caaff
+		width 100%
+		.header
+			border-bottom 1px solid #e8e8e8
+			h2.title
+				display inline-block
+				color #19213d
+				font-size 1.1em
+				margin-bottom 0px
+				padding 12px 16px
+			ul
+				display inline-block
+				float right
+				margin-right 12px
+				li
+					display inline-block
+					position relative
+					a
+						color #333
+						display inline-block
+						padding 10px
+						&:hover
+							background-color #f6f6f6
+							color #222
+							text-decoration none
+						i
+							color #2caaff
+					ul
+						background-color #fff
+						border 1px solid #f0f0f0
+						display none	
+						float none
+						position absolute
+						right -16px
+						width 200px
+						li
+							display inline-block
+							border-bottom 1px solid #f0f0f0
+							width 100%
+							&:last-child
+								border-bottom 0px 
+							a
+								display block
+								width 100%
+					&:hover
+						ul
+							display block
+							
+		.inside
+			padding 16px 
+			.nav
+				.nav-link
+					border 1px solid #2caaff
+					margin-right 8px
+					&:hover
+						background-color #2caaff
+						color #fff
+			.form_search
+				display none
+				margin-bottom 16px
+				.btn
+					width 100%
+			.big_count
+				display block
+				font-size 2em
+				text-align center
+				width 100%
+			.edit_avatar
+				a
+					display block
+					margin 0px auto
+					position relative
+					width 140px
+					.overlay
+						align-items center
+						background-color rgba(0, 0, 0, .55)
+						border-radius 50%
+						color #fff
+						display none
+						font-size 2em
+						height 140px
+						justify-content center
+						position absolute
+						width 100%
+						img
+							width 60px
+					&:hover
+						.overlay
+							display flex
+				img
+					border-radius 50%
+					display block
+					width 100%
+				.form-control
+					display none
+			.btn-primary
+				background-color color1
+				border 0px
+				padding 8px 32px !important
+				&:hover
+					background-color color2
+					color #000
+					

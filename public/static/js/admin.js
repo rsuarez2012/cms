@@ -67,15 +67,19 @@ function delete_object(e){
 		text = "Esta accion restaurara este elemento y estara activo en la base de datos.!"; 
 		icon = "info"; 
 	}
-	swal({
+	swal.fire({
 		title: title,
 		text: text,
 		icon: icon,
-		buttons: true,
-		dangerMode: true,
-	})
-	.then((willDelete) => {
-	 	if (willDelete) {
+		showCancelButton: true,
+		cancelButtonText: 'No, cancelar!',
+
+		//buttons: true,
+		//dangerMode: true,
+	}).then((result) => {
+	//.then((willDelete) => {
+	 	//if (willDelete) {
+	 	if (result.value) {
 	    	/*swal("Poof! Your imaginary file has been deleted!", {
 	      	icon: "success",
 

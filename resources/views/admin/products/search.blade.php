@@ -47,7 +47,7 @@
 				{!! Form::open(['url' => '/admin/product/search']) !!}
 				<div class="row">
 					<div class="col-md-4">
-						{!! Form::text('search', null, ['class' => 'form-control', 'placeholder' => 'Buscar']) !!}
+						{!! Form::text('search', null, ['class' => 'form-control', 'placeholder' => 'Ingrese su Busqueda', 'required']) !!}
 						
 					</div>
 					<div class="col-md-4">

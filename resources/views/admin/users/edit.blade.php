@@ -23,7 +23,7 @@
 							@if(is_null($user->avatar))
 								<img src="{{ url('/static/images/avatar5.png') }}" alt="" class="avatar">
 							@else
-								<img src="{{ url('/uploads/user/'.$user->id.'/'.$user->avatar) }}" alt="" class="avatar">
+								<img src="{{ url('/uploads_users/'.$user->id.'/'.$user->avatar) }}" alt="" class="avatar">
 							@endif
 
 							<div class="info mtop16">

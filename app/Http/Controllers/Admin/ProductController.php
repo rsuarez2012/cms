@@ -127,7 +127,7 @@ class ProductController extends Controller
                     $img->save($upload_path.'/'.$path.'/t_'.$filename);
 
                 }
-                return redirect('/admin/products')->with('message', 'Producto registrado con exito.!')->with('typealert', 'success');
+                return redirect('/admin/products/1')->with('message', 'Producto registrado con exito.!')->with('typealert', 'success');
             endif;
         endif;
     }

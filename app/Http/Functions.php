@@ -109,3 +109,35 @@ function user_permissions(){
 
 	return $p;
 }
+
+function getUserYear()
+{
+	$year = date('Y');
+	$minYear = $year - 18;
+	$maxYear = $minYear - 70;
+	return [$minYear, $maxYear];
+}
+
+function getMonths($mode, $key)
+{
+	$month = [
+		'01' => 'Enero',
+		'02' => 'Febrero',
+		'03' => 'Marzo',
+		'04' => 'Abril',
+		'05' => 'Mayo',
+		'06' => 'Junio',
+		'07' => 'Julio',
+		'08' => 'Agosto',
+		'09' => 'Septiembre',
+		'10' => 'Octubre',
+		'11' => 'Noviembre',
+		'12' => 'Diciembre'
+
+	];
+	if($mode == 'list'){
+		return $month;
+	}else{
+		return $month[$key];
+	}
+}
